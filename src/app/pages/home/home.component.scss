@@ -1,0 +1,17 @@
+.wrapper {
+  overflow-x: hidden;
+
+  .home-numBG {
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    background-position: 50% 50%;
+    margin: 60px 0;
+  }
+
+  .atmosphere {
+    p {
+      padding: 0 40px;;
+    }
+  }
+}
