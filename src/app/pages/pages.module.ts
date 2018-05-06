@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
+import {ProductsComponent} from "./products/products.component";
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { LandingComponent } from './landing/landing.component';
         HomeComponent,
         LoginComponent,
         ProfileComponent,
-        LandingComponent
+        LandingComponent,
+        ProductsComponent
     ]
 })
 export class PagesModule { }
