@@ -6,11 +6,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 
+import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
-import {ProductsComponent} from "./products/products.component";
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
     imports: [
@@ -24,6 +25,7 @@ import {ProductsComponent} from "./products/products.component";
         })
     ],
     declarations: [
+        PagesComponent,
         HomeComponent,
         LoginComponent,
         ProfileComponent,
