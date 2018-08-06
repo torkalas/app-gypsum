@@ -1,11 +1,15 @@
 ///<reference path="../../../../node_modules/@angular/core/src/metadata/directives.d.ts"/>
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
 import * as Rellax from 'rellax';
+import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
+import { Lightbox } from '@ngx-gallery/lightbox';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  styleUrls: ['./profile.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProfileComponent implements OnInit, OnDestroy {
   zoom = 14;
@@ -31,8 +35,15 @@ export class ProfileComponent implements OnInit, OnDestroy {
     data: Date = new Date();
     focus;
     focus1;
+    images = [
+      'assets/img/bg1.jpg',
+      'assets/img/bg3.jpg'
+    ];
 
-    constructor() { }
+    items: GalleryItem[];
+    imageData = data;
+
+    constructor(public gallery: Gallery, public lightbox: Lightbox) { }
 
     ngOnInit() {
       const rellaxHeader = new Rellax('.rellax-header');
@@ -41,6 +52,14 @@ export class ProfileComponent implements OnInit, OnDestroy {
         body.classList.add('profile-page');
         const navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.add('navbar-transparent');
+
+        // Creat gallery items
+        this.items = this.imageData.map(item => {
+            return new ImageItem({ src: item.srcUrl, thumb: item.previewUrl });
+        });
+
+        // Load items into the lightbox gallery ref
+        this.gallery.ref('lightbox').load(this.items);
     }
     ngOnDestroy() {
         const body = document.getElementsByTagName('body')[0];
@@ -48,5 +67,23 @@ export class ProfileComponent implements OnInit, OnDestroy {
         const navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');
     }
-
 }
+
+const data = [
+    {
+        srcUrl: 'assets/img/bg1.jpg',
+        previewUrl: 'assets/img/bg1.jpg'
+    },
+    {
+        srcUrl: 'assets/img/bg3.jpg',
+        previewUrl: 'assets/img/bg3.jpg'
+    },
+    {
+        srcUrl: 'assets/img/bg5.jpg',
+        previewUrl: 'assets/img/bg5.jpg'
+    },
+    {
+        srcUrl: 'assets/img/bg8.jpg',
+        previewUrl: 'assets/img/bg8.jpg'
+    }
+];

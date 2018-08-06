@@ -5,8 +5,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
 import { PagesModule } from './pages/pages.module';
+import { GalleryModule } from '@ngx-gallery/core';
+import { LightboxModule } from '@ngx-gallery/lightbox';
+import { GallerizeModule } from '@ngx-gallery/gallerize';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -19,11 +21,13 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     imports: [
         BrowserAnimationsModule,
         NgbModule.forRoot(),
+        GalleryModule.forRoot(),
+        LightboxModule.forRoot(),
+        GallerizeModule,
         FormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule,
         PagesModule
     ],
     providers: [],
