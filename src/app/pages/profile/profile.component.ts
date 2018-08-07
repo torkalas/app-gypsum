@@ -81,5 +81,17 @@ const data = [
     {
         srcUrl: 'assets/img/bg8.jpg',
         previewUrl: 'assets/img/bg8.jpg'
+    },
+    {
+        srcUrl: 'assets/img/gypsum_logo.png',
+        previewUrl: 'assets/img/gypsum_logo.png'
+    },
+    {
+        srcUrl: 'assets/img/gypum_home_bg.jpg',
+        previewUrl: 'assets/img/gypum_home_bg.jpg'
+    },
+    {
+        srcUrl: 'assets/img/logo.png',
+        previewUrl: 'assets/img/logo.png'
     }
 ];

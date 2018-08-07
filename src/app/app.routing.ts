@@ -9,8 +9,8 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
-import {ProductsComponent} from "./pages/products/products.component";
-import {ProductComponent} from "./pages/product/product.component";
+import { ProductsComponent } from './pages/products/products.component';
+import { ProductComponent } from './pages/product/product.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },

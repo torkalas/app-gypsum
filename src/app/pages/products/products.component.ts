@@ -1,23 +1,32 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewChecked } from '@angular/core';
 import * as Rellax from 'rellax';
-import { ProductService, Product } from "../../services/product.service";
-import { Router } from "@angular/router";
+import { ProductService, Product } from '../../services/product.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent implements OnInit, OnDestroy {
+export class ProductsComponent implements OnInit, OnDestroy, AfterViewChecked {
   data: Date = new Date();
   focus;
   focus1;
 
    items: Product[] = [];
 
-  constructor(private productService: ProductService, private router: Router) { }
+   param: string;
+   fragment: string;
+
+  constructor(
+      private productService: ProductService,
+      private router: Router,
+      private route: ActivatedRoute) { }
 
   ngOnInit() {
+
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+
     this.items = this.productService.getProducts();
 
     const rellaxHeader = new Rellax('.rellax-header');
@@ -26,6 +35,16 @@ export class ProductsComponent implements OnInit, OnDestroy {
       const navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.add('navbar-transparent');
   }
+
+  ngAfterViewChecked(): void {
+    try {
+      if (this.fragment) {
+          document.querySelector('#' + this.fragment).scrollIntoView();
+          window.scrollBy(0, -58);
+      }
+    } catch (e) { }
+  }
+
   ngOnDestroy() {
       const body = document.getElementsByTagName('body')[0];
     body.classList.remove('products-page');

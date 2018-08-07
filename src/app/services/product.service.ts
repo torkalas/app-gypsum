@@ -72,7 +72,8 @@ export class ProductService {
                 'item_1.jpg',
                 'item_2.jpg',
                 'item_3.jpg',
-                'item_4.jpg'
+                'item_4.jpg',
+                'item_5.jpg'
             ]
         },
         {
@@ -152,7 +153,8 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
@@ -215,7 +217,9 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {
@@ -275,7 +279,9 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {
@@ -295,7 +301,10 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                    'item_1.jpg',
+                    'item_2.png',
+                    'item_3.jpeg',
+                    'item_4.png'
             ]
         },
         {
@@ -325,7 +334,9 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {
@@ -335,7 +346,9 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {
@@ -385,7 +398,7 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                    'item_1.jpg'
             ]
         },
         {
@@ -395,9 +408,9 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg'
+                    'item_1.jpg',
+                    'item_2.jpg',
+                    'item_3.jpg'
             ]
         },
         {
@@ -407,7 +420,9 @@ export class ProductService {
                 'size': '40х40',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                    'item_1.jpg',
+                    'item_2.jpg',
+                    'item_3.jpg'
             ]
         },
         {
@@ -417,7 +432,7 @@ export class ProductService {
                 'size': '50х50',
                 'price': 100,
                 'images': [
-                'item_1.jpg'
+                    'item_1.jpg'
             ]
         },
         {

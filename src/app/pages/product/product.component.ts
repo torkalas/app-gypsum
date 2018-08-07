@@ -1,7 +1,7 @@
 import {Component, OnInit, OnDestroy, ChangeDetectionStrategy} from '@angular/core';
 import * as Rellax from 'rellax';
-import { ProductService, Product } from "../../services/product.service";
-import { ActivatedRoute, Router } from "@angular/router";
+import { ProductService, Product } from '../../services/product.service';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
 import { Lightbox } from '@ngx-gallery/lightbox';
 import { map } from 'rxjs/operators';
@@ -31,7 +31,7 @@ export class ProductComponent implements OnInit, OnDestroy {
   }
 
   loadProduct() {
-      let id = this.route.snapshot.paramMap.get('id');
+      const id = this.route.snapshot.paramMap.get('id');
       this.product = this.productService.getProduct(id);
       this.imageData = this.product.images;
       console.log(this.product);
@@ -49,7 +49,7 @@ export class ProductComponent implements OnInit, OnDestroy {
 
       // Creat gallery items
       this.items = this.imageData.map(item => {
-          return new ImageItem({ src: 'assets/img/products/' + this.product.code + '/' + item });
+          return new ImageItem({ src: 'assets/img/products/' + this.product.code + '/' + item, thumb: 'assets/img/products/' + this.product.code + '/' + item});
       });
 
       // Load items into the lightbox gallery ref

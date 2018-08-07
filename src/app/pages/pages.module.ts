@@ -6,6 +6,7 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
+import { RouterModule } from '@angular/router';
 
 // Pages
 import { PagesComponent } from './pages.component';
@@ -14,10 +15,10 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProductsComponent } from './products/products.component';
-import {ProductComponent} from "./product/product.component";
+import { ProductComponent } from './product/product.component';
 
 // Services
-import {ProductService} from "../services/product.service";
+import {ProductService} from '../services/product.service';
 
 @NgModule({
     imports: [
@@ -28,7 +29,8 @@ import {ProductService} from "../services/product.service";
         JWBootstrapSwitchModule,
         AgmCoreModule.forRoot({
             apiKey: 'YOUR_KEY_HERE'
-        })
+        }),
+        RouterModule
     ],
     declarations: [
         PagesComponent,
