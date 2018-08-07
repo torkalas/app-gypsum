@@ -22,8 +22,21 @@
     <div class="section section-items">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                   item
+                <div class="col-md-3" *ngFor="let item of items">
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="assets/img/products/{{item.code}}/{{item.images[0]}}" alt="{{item.name}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.name}}</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">ID: {{item.id}}<span class="pull-right">Код: {{item.code}}</span></li>
+                                <li class="list-group-item">Размер: {{item.size}}<span class="pull-right">Цена: {{item.price}}</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="card-footer">
+                            <button (click)="gotoProduct(item.id)" class="card-link">Подробнее -></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

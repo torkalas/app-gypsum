@@ -35,10 +35,6 @@ export class ProfileComponent implements OnInit, OnDestroy {
     data: Date = new Date();
     focus;
     focus1;
-    images = [
-      'assets/img/bg1.jpg',
-      'assets/img/bg3.jpg'
-    ];
 
     items: GalleryItem[];
     imageData = data;

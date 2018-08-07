@@ -21,14 +21,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     imports: [
         BrowserAnimationsModule,
         NgbModule.forRoot(),
-        GalleryModule.forRoot(),
-        LightboxModule.forRoot(),
-        GallerizeModule,
         FormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        PagesModule
+        PagesModule,
+        GalleryModule.forRoot(),
+        LightboxModule.forRoot(),
+        GallerizeModule
     ],
     providers: [],
     bootstrap: [AppComponent]
