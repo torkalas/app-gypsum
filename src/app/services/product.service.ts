@@ -60,7 +60,11 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg'
             ]
         },
         {
@@ -103,7 +107,10 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg'
             ]
         },
         {
@@ -154,7 +161,8 @@ export class ProductService {
             'price': 100,
             'images': [
                 'item_1.jpg',
-                'item_2.jpg'
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {
@@ -174,7 +182,10 @@ export class ProductService {
             'size': '45х45',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg'
             ]
         },
         {
@@ -184,7 +195,12 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg',
+                'item_6.jpg'
             ]
         },
         {
@@ -368,7 +384,10 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.png'
+                'item_1.png',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg'
             ]
         },
         {
@@ -420,9 +439,7 @@ export class ProductService {
             'size': '40х40',
             'price': 100,
             'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg'
+                'item_1.jpg'
             ]
         },
         {
@@ -442,7 +459,12 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.png',
+                'item_2.jpg',
+                'item_3.png',
+                'item_5.png',
+                'item_6.png',
+                'item_7.jpg'
             ]
         },
         {
@@ -452,7 +474,8 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
@@ -509,10 +532,11 @@ export class ProductService {
             'id': 590133319,
             'code': 42,
             'name': 'Стоун',
-            'size': '50х50(?)',
+            'size': '245x215мм',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
@@ -552,7 +576,7 @@ export class ProductService {
             'size': '50х40',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.png'
             ]
         },
         {
@@ -583,6 +607,22 @@ export class ProductService {
             'price': 100,
             'images': [
                 'item_1.jpg'
+            ]
+        },
+        {
+            'id': 713617403,
+            'code': 29,
+            'name': 'Пузыри',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg',
+                'item_6.jpg',
+                'item_7.jpg',
             ]
         }
     ];
