@@ -145,7 +145,12 @@ export class ProductService {
             'size': '20х20',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg',
+                'item_6.jpg',
             ]
         },
         {
@@ -181,7 +186,9 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {
@@ -284,7 +291,8 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
@@ -383,7 +391,11 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg'
             ]
         },
         {
@@ -396,7 +408,8 @@ export class ProductService {
                 'item_1.png',
                 'item_2.jpg',
                 'item_3.jpg',
-                'item_4.jpg'
+                'item_4.jpg',
+                'item_5.jpg'
             ]
         },
         {
@@ -406,7 +419,8 @@ export class ProductService {
             'size': '50х50',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
@@ -596,7 +610,10 @@ export class ProductService {
             'size': '50х30',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg'
             ]
         },
         {
