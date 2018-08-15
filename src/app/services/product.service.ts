@@ -351,13 +351,14 @@ export class ProductService {
             ]
         },
         {
-            'id': 684520690,
+            'id': 707798267,
             'code': 56,
-            'name': 'Цель',
-            'size': '50х50',
+            'name': 'Ромашка',
+            'size': '50х40',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
@@ -650,6 +651,78 @@ export class ProductService {
                 'item_5.jpg',
                 'item_6.jpg',
                 'item_7.jpg',
+            ]
+        },
+        {
+            'id': 684520690,
+            'code': 34,
+            'name': 'Цель',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg'
+            ]
+        },
+        {
+            'id': 686225244,
+            'code': 57,
+            'name': 'Лилия',
+            'size': '50х20',
+            'price': 100,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg'
+            ]
+        },
+        {
+            'id': 738557182,
+            'code': 58,
+            'name': 'Оригами',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+
+            ]
+        },
+        {
+            'id': 738588651,
+            'code': 59,
+            'name': 'Концепт',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+
+            ]
+        },
+        {
+            'id': 738593027,
+            'code': 60,
+            'name': 'Ирис',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+                'item_1.jpg'
+            ]
+        },
+        {
+            'id': 738594634,
+            'code': 61,
+            'name': 'Футуризм',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+
+            ]
+        },
+        {
+            'id': 738598435,
+            'code': 62,
+            'name': 'Свайп',
+            'size': '50х50',
+            'price': 100,
+            'images': [
+                'item_2.jpg'
             ]
         }
     ];
