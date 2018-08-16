@@ -40,7 +40,7 @@ export class ProductsComponent implements OnInit, OnDestroy, AfterViewChecked {
     try {
       if (this.fragment) {
           document.querySelector('#' + this.fragment).scrollIntoView();
-          window.scrollBy(0, -58);
+          window.scrollBy(0, -78);
       }
     } catch (e) { }
   }
