@@ -263,7 +263,8 @@ export class ProductService {
             'size': '500х500',
             'price': 100,
             'images': [
-                'item_1.jpg'
+                'item_1.jpg',
+                'item_2.jpg'
             ]
         },
         {
