@@ -269,7 +269,8 @@ export class ProductService {
             'price': 100,
             'images': [
                 'item_1.jpg',
-                'item_2.jpg'
+                'item_2.jpg',
+                'item_3.jpg'
             ]
         },
         {

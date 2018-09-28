@@ -44,14 +44,9 @@ export class NavbarComponent implements OnInit {
             this.sidebarClose();
         }
     };
-  
+
     isDocumentation() {
-        var titlee = this.location.prepareExternalUrl(this.location.path());
-        if( titlee === '/documentation' ) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        const title = this.location.prepareExternalUrl(this.location.path());
+        return title === '/documentation';
     }
 }

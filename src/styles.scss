@@ -13,3 +13,36 @@ lightbox {
 nav.fixed-top {
   z-index: 999;
 }
+
+nav.g-primary-color {
+  background-color: #FF3636 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar-collapse .navbar-collapse:before {
+    background: linear-gradient(#FF3636 13%, #000 80%) !important;
+    opacity: unset !important;
+    filter: alpha(opacity=76) !important;
+    display: block !important;
+    content: "" !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: -1 !important;
+  }
+}
+
+.navbar p {
+  display: inline-block;
+  margin: 0;
+  line-height: 36px;
+  font-size: 21px;
+  padding-top: 10px;
+  text-shadow: -3px 3px 6px white, 0 0 2em #FF3636;
+}
+
+.navbar .navbar-brand {
+  padding: 0 !important;
+}
