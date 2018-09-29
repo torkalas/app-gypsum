@@ -8,22 +8,25 @@
             </div>
         </div>
     </div>
+    <!-- Back arrow -->
+    <div class="back-arrow">
+        <a style="margin: 0" [routerLink]="['/products']" [fragment]="'product_' + product.code" class="btn btn-link">
+            <i class="fa fa-arrow-left fa-2x" title="Назад"></i>
+        </a>
+    </div>
+    <!-- Section items-->
     <div class="section section-items">
+
         <div class="container">
             <div class="row">
-                <div class="row">
-                    <div class="col-md-2">
-                        <a style="margin: 0" [routerLink]="['/products']" [fragment]="'product_' + product.code" class="btn btn-link"><i class="fa fa-arrow-left fa-2x" title="Назад"></i></a>
-                    </div>
-                    <div class="col-md-10">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a [routerLink]="['/home']">Главная</a></li>
-                                <li class="breadcrumb-item"><a [routerLink]="['/products']" [fragment]="'product_' + product.code">Продукция</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">{{product.name}}</li>
-                            </ol>
-                        </nav>
-                    </div>
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a [routerLink]="['/home']">Главная</a></li>
+                            <li class="breadcrumb-item"><a [routerLink]="['/products']" [fragment]="'product_' + product.code">Продукция</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{product.name}}</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
             <div class="row">
@@ -31,9 +34,9 @@
                     <div class="card-body">
                         <h5 class="card-title">{{product.name}}</h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: {{product.id}}<span class="pull-right">Код: {{product.code}}</span></li>
-                            <li class="list-group-item"><span class="pull-center">Размер: {{product.size}} мм</span></li>
-                            <li class="list-group-item"><span class="pull-center">Цена: {{product.price}}</span></li>
+                            <li class="list-group-item">Код: <b>{{product.code}}</b></li>
+                            <li class="list-group-item"><span class="pull-center">Размер: <b>{{product.size}}</b> мм.</span></li>
+                            <li class="list-group-item"><span class="pull-center">Цена: <b>{{product.price}}</b> грн.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -67,21 +70,7 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">
-                            О компании
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            MIT License
-                        </a>
-                    </li>
+
                 </ul>
             </nav>
             <div class="copyright">

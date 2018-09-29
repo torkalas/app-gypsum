@@ -1,5 +1,17 @@
-.products-page{
+.back-arrow {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  a {
+    padding: 20px;
+    i {
+      color: #FF3636
+    }
+  }
+}
 
+.products-page{
   .header{
     height: 100vh;
     position: relative;

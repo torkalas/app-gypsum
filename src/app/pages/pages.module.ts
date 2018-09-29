@@ -16,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
+import { ContactComponent } from './contact/contact.component';
 
 // Services
 import {ProductService} from '../services/product.service';
@@ -39,7 +40,8 @@ import {ProductService} from '../services/product.service';
         ProfileComponent,
         LandingComponent,
         ProductsComponent,
-        ProductComponent
+        ProductComponent,
+        ContactComponent
     ],
     providers: [ProductService]
 })

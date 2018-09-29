@@ -1,4 +1,28 @@
-.products-page{
+
+.top-card .top-sell {
+  display: block;
+  position: absolute;
+  background: #FF3636;
+  padding: 4px 4px 4px 10px;
+  right: 0;
+  top: 4px;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+  color: #fff;
+  text-shadow: -3px 3px 6px white, 0 0 2em #FF3636
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-body{
+  min-height: 50px;
+}
+
+app-products {
+
+
 
   .header{
     height: 100vh;
@@ -22,37 +46,20 @@
     }
   }
 
-  .section-team{
-    .team .team-player img{
-      max-width: 100px;
+  .section-items {
+    .top-sell {
+      display: none;
     }
-
-    .team-player{
-      margin-bottom: 15px;
-    }
-  }
-
-  .section-contact-us{
-    .title{
-      margin-bottom: 15px;
-    }
-
-    .description{
-      margin-bottom: 30px;
-    }
-
-    .input-group,
-    .send-button,
-    .textarea-container{
-      padding: 0 40px;
-    }
-
-    .textarea-container{
-      margin: 40px 0;
-    }
-
-    a.btn{
-      margin-top: 35px;
+    .top-card .top-sell {
+      display: block;
+      position: absolute;
+      background: red;
+      padding: 4px 4px 4px 10px;
+      right: 0;
+      top: 4px;
+      border-bottom-left-radius: 16px;
+      border-top-left-radius: 16px;
+      color: #fff;
     }
   }
 }

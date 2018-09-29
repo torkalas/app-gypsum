@@ -6,6 +6,7 @@ export interface Product {
     name: string,
     size: string,
     price: number,
+    top: boolean,
     images: any
 }
 
@@ -23,7 +24,8 @@ export class ProductService {
         //     'code': 32,
         //     'name': 'Пиксели',
         //     'size': '400х400',
-        //     'price': 100,
+        //     'price': 80,
+        //     'top': false
         //     'images': [
         //         'item_1.jpg',
         //         'item_2.jpg',
@@ -34,11 +36,122 @@ export class ProductService {
         //     ]
         // },
         {
+            'id': 684727789,
+            'code': 15,
+            'name': 'Сахара',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
+            ]
+        },
+        {
+            'id': 684585427,
+            'code': 38,
+            'name': 'Волна',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.png',
+                'item_5.png',
+                'item_6.jpeg'
+            ]
+        },
+        {
+            'id': 684462407,
+            'code': 8,
+            'name': 'Бутоны',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg'
+            ]
+        },
+        {
+            'id': 684727653,
+            'code': 40,
+            'name': 'Динамик',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg'
+            ]
+        },
+        {
+            'id': 713617403,
+            'code': 29,
+            'name': 'Пузыри',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg',
+                'item_3.jpg',
+                'item_4.jpg',
+                'item_5.jpg',
+                'item_6.jpg',
+                'item_7.jpg',
+            ]
+        },
+        {
+            'id': 685256361,
+            'code': 28,
+            'name': 'Соты',
+            'size': '500х530',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg'
+            ]
+        },
+        {
+            'id': 685257208,
+            'code': 23,
+            'name': 'Прованс',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg'
+            ]
+        },
+        {
+            'id': 685255259,
+            'code': 25,
+            'name': 'Ракушка',
+            'size': '500х500',
+            'price': 80,
+            'top': true,
+            'images': [
+                'item_1.jpg',
+                'item_2.jpg'
+            ]
+        },
+        {
             'id': 685673991,
             'code': 24,
             'name': 'Пьяный Карло',
             'size': '400х400',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -49,7 +162,8 @@ export class ProductService {
             'code': 41,
             'name': 'Древесный микс',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -60,7 +174,8 @@ export class ProductService {
             'code': 30,
             'name': 'Техно',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -74,7 +189,8 @@ export class ProductService {
             'code': 33,
             'name': 'Ветер',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -87,7 +203,8 @@ export class ProductService {
             'code': 14,
             'name': 'Калейдоскоп',
             'size': '400х400',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -98,7 +215,8 @@ export class ProductService {
             'code': 22,
             'name': 'Дюны',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -111,7 +229,8 @@ export class ProductService {
             'code': 20,
             'name': 'Пирамиды',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -124,7 +243,8 @@ export class ProductService {
             'code': 1,
             'name': 'Аллигатор',
             'size': '400х400',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -135,7 +255,8 @@ export class ProductService {
             'code': 9,
             'name': 'Бубль Гум',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -146,7 +267,8 @@ export class ProductService {
             'code': 4,
             'name': 'Сириус',
             'size': '200х200',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -161,7 +283,8 @@ export class ProductService {
             'code': 19,
             'name': 'Переплёт',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -175,7 +298,8 @@ export class ProductService {
             'code': 46,
             'name': 'Чешуя',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -187,7 +311,8 @@ export class ProductService {
             'code': 54,
             'name': 'Талия',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -199,7 +324,8 @@ export class ProductService {
             'code': 3,
             'name': 'Квадраты',
             'size': '450х450',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -212,7 +338,8 @@ export class ProductService {
             'code': 10,
             'name': 'Ядра',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -227,7 +354,8 @@ export class ProductService {
             'code': 52,
             'name': 'Иллюзия',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -241,7 +369,8 @@ export class ProductService {
             'code': 45,
             'name': 'Лёд',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -250,23 +379,12 @@ export class ProductService {
             ]
         },
         {
-            'id': 684727789,
-            'code': 15,
-            'name': 'Сахара',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg'
-            ]
-        },
-        {
             'id': 684566262,
             'code': 11,
             'name': 'Матрица',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -278,7 +396,8 @@ export class ProductService {
             'code': 35,
             'name': 'Кратеры',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -290,7 +409,8 @@ export class ProductService {
             'code': 16,
             'name': 'Магия',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -301,7 +421,8 @@ export class ProductService {
             'code': 55,
             'name': 'Параллель',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -312,7 +433,8 @@ export class ProductService {
             'code': 37,
             'name': 'Уют',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_1.jpg'
@@ -323,7 +445,8 @@ export class ProductService {
             'code': 2,
             'name': 'Каскад',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -335,7 +458,8 @@ export class ProductService {
             'code': 39,
             'name': 'Вуаль',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -343,26 +467,12 @@ export class ProductService {
             ]
         },
         {
-            'id': 684585427,
-            'code': 38,
-            'name': 'Волна',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg',
-                'item_4.png',
-                'item_5.png',
-                'item_6.jpeg'
-            ]
-        },
-        {
             'id': 684523414,
             'code': 53,
             'name': 'Рок',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -375,7 +485,8 @@ export class ProductService {
             'code': 56,
             'name': 'Ромашка',
             'size': '500х400',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -386,37 +497,12 @@ export class ProductService {
             'code': 44,
             'name': 'Эфир',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
                 'item_3.jpg'
-            ]
-        },
-        {
-            'id': 684462407,
-            'code': 8,
-            'name': 'Бутоны',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg'
-            ]
-        },
-        {
-            'id': 684727653,
-            'code': 40,
-            'name': 'Динамик',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg',
-                'item_4.jpg',
-                'item_5.jpg'
             ]
         },
         {
@@ -424,7 +510,8 @@ export class ProductService {
             'code': 17,
             'name': 'Нежность',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -438,29 +525,8 @@ export class ProductService {
             'code': 27,
             'name': 'Роза',
             'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg'
-            ]
-        },
-        {
-            'id': 685256361,
-            'code': 28,
-            'name': 'Соты',
-            'size': '500х530',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg'
-            ]
-        },
-        {
-            'id': 685257208,
-            'code': 23,
-            'name': 'Прованс',
-            'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -471,7 +537,8 @@ export class ProductService {
             'code': 13,
             'name': 'Ретро крупная',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -483,7 +550,8 @@ export class ProductService {
             'code': 21,
             'name': 'Подушка',
             'size': '400х400',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -494,7 +562,8 @@ export class ProductService {
             'code': 12,
             'name': 'Султан',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.png',
@@ -507,7 +576,8 @@ export class ProductService {
             'code': 26,
             'name': 'Ретро',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.png',
                 'item_2.jpg',
@@ -518,22 +588,12 @@ export class ProductService {
             ]
         },
         {
-            'id': 685255259,
-            'code': 25,
-            'name': 'Ракушка',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg'
-            ]
-        },
-        {
             'id': 638246490,
             'code': 50,
             'name': 'Клин',
             'size': '250х170',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -544,7 +604,8 @@ export class ProductService {
             'code': 48,
             'name': 'Бордо',
             'size': '200х200',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -555,7 +616,8 @@ export class ProductService {
             'code': 51,
             'name': 'Престиж',
             'size': '500х125',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -566,7 +628,8 @@ export class ProductService {
             'code': 49,
             'name': 'Клин 2.0',
             'size': '250х170',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -577,7 +640,8 @@ export class ProductService {
             'code': 47,
             'name': 'Кегли',
             'size': '280х140',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -594,7 +658,8 @@ export class ProductService {
             'code': 42,
             'name': 'Стоун',
             'size': '190x170',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -605,38 +670,42 @@ export class ProductService {
             'code': 5,
             'name': 'Пик',
             'size': '190х175',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
             ]
         },
-        {
-            'id': 632130871,
-            'code': 6,
-            'name': 'Пик 2.0',
-            'size': '190x175',
-            'price': 100,
-            'images': [
-                'item_1.jpg'
-            ]
-        },
-        {
-            'id': 590145577,
-            'code': 43,
-            'name': 'Хвойная',
-            'size': '270х95x25',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-            ]
-        },
+        // {
+        //     'id': 632130871,
+        //     'code': 6,
+        //     'name': 'Пик 2.0',
+        //     'size': '190x175',
+        //     'price': 35,
+        //     'top': false,
+        //     'images': [
+        //         'item_1.jpg'
+        //     ]
+        // },
+        // {
+        //     'id': 590145577,
+        //     'code': 43,
+        //     'name': 'Хвойная',
+        //     'size': '270х95x25',
+        //     'price': 35,
+        //     'top': false,
+        //     'images': [
+        //         'item_1.jpg',
+        //     ]
+        // },
         {
             'id': 561073779,
             'code': 36,
             'name': 'Бамбук',
             'size': '500х400',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -647,7 +716,8 @@ export class ProductService {
             'code': 18,
             'name': 'Пазл',
             'size': '500х300',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg',
@@ -655,40 +725,26 @@ export class ProductService {
                 'item_4.jpg'
             ]
         },
-        {
-            'id': 561073810,
-            'code': 31,
-            'name': 'Филенка',
-            'size': '400х400',
-            'price': 100,
-            'images': [
-                'item_1.jpg'
-            ]
-        },
+        // {
+        //     'id': 561073810,
+        //     'code': 31,
+        //     'name': 'Филенка',
+        //     'size': '400х400',
+        //     'price': 80,
+        //     'top': false,
+        //     'images': [
+        //         'item_1.jpg'
+        //     ]
+        // },
         {
             'id': 667749550,
             'code': 7,
             'name': 'Гриндер',
             'size': '200x200',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg'
-            ]
-        },
-        {
-            'id': 713617403,
-            'code': 29,
-            'name': 'Пузыри',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-                'item_1.jpg',
-                'item_2.jpg',
-                'item_3.jpg',
-                'item_4.jpg',
-                'item_5.jpg',
-                'item_6.jpg',
-                'item_7.jpg',
             ]
         },
         {
@@ -696,7 +752,8 @@ export class ProductService {
             'code': 34,
             'name': 'Цель',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
@@ -707,58 +764,64 @@ export class ProductService {
             'code': 57,
             'name': 'Лилия',
             'size': '500х200',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg',
                 'item_2.jpg'
             ]
         },
-        {
-            'id': 738557182,
-            'code': 58,
-            'name': 'Оригами',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-
-            ]
-        },
-        {
-            'id': 738588651,
-            'code': 59,
-            'name': 'Концепт',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-
-            ]
-        },
+        // {
+        //     'id': 738557182,
+        //     'code': 58,
+        //     'name': 'Оригами',
+        //     'size': '500х500',
+        //     'price': 80,
+        //     'top': false,
+        //     'images': [
+        //
+        //     ]
+        // },
+        // {
+        //     'id': 738588651,
+        //     'code': 59,
+        //     'name': 'Концепт',
+        //     'size': '500х500',
+        //     'price': 80,
+        //     'top': false,
+        //     'images': [
+        //
+        //     ]
+        // },
         {
             'id': 738593027,
             'code': 60,
             'name': 'Ирис',
             'size': '500х500',
-            'price': 100,
+            'price': 35,
+            'top': false,
             'images': [
                 'item_1.jpg'
             ]
         },
-        {
-            'id': 738594634,
-            'code': 61,
-            'name': 'Футуризм',
-            'size': '500х500',
-            'price': 100,
-            'images': [
-
-            ]
-        },
+        // {
+        //     'id': 738594634,
+        //     'code': 61,
+        //     'name': 'Футуризм',
+        //     'size': '500х500',
+        //     'price': 80,
+        //     'top': false,
+        //     'images': [
+        //
+        //     ]
+        // },
         {
             'id': 738598435,
             'code': 62,
             'name': 'Свайп',
             'size': '500х500',
-            'price': 100,
+            'price': 80,
+            'top': false,
             'images': [
                 'item_2.jpg'
             ]
